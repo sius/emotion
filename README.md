@@ -4,7 +4,7 @@ Simple Usage of RS232 Port with csharp
 
 ## Overview
 
-Motion Control sample with the Trinamic Motion Control Language (TMCL)
+Motion Control sample with the Trinamic Motion Control Language ([TMCL](./docs/TMCL_reference.pdf))
 
 
 ### Prerequesites:
@@ -14,4 +14,4 @@ Motion Control sample with the Trinamic Motion Control Language (TMCL)
 
 ## Links
 
-- [TMCL Reference](./TMCL_reference.pdf)
+- [TMCL Reference](./docs/TMCL_reference.pdf)
