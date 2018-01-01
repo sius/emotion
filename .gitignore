@@ -2,7 +2,6 @@ TestResults/
 *Draft/
 .vs/
 Debug/
-ipch/
 **/bin/
 **/obj/
 *Draft.md
