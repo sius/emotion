@@ -1,0 +1,41 @@
+﻿namespace TMCLDirect
+{
+    public enum TMCM100AxisParameter
+    {
+        TargetPosition = 0,
+        ActualPosition = 1,
+        TargetVelocity = 2,
+        ActualVelocity = 3,
+        MaxPositioningVelocity = 4,
+        MaxAcceleration = 5,
+        CurrentAtConstantRotation = 6,
+        CurrentAtStandby = 7,
+        PositionReachedFlag = 8,
+        ReferenceSwitchStatus = 9,
+        RightStopSwitchStatus = 10,
+        LeftStopSwitchStatus = 11,
+        StopSwitchDisable = 12,
+        StopSwitchDisable2 = 13,
+        StepRatePrescaler = 14,
+        Bow = 15,
+        MicrostepResolution = 16,
+        MicrostepWaveform = 17,
+        StepDirectionMode = 18,
+        StepPulseLength = 19,
+        Phases = 20,
+        CurrentAtAcceleration = 21,
+        ReferenceSerachMode = 22,
+        ReferenceSearchVelocity = 23,
+        StopSwitchDeceleration = 24,
+        EncoderPosition = 25,
+        EncoderConfiguration = 26,
+        EncoderPredivider = 27,
+        EncoderMultiplier = 28,
+        MaximumDeviation = 29,
+        DeviationAction = 30,
+        CorrectionDelay = 31,
+        CorrectionRetries = 32,
+        CorrectionTolerance = 33,
+        CorrectionVelocity = 34
+    }
+}

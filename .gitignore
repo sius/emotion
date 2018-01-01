@@ -1,0 +1,6 @@
+TestResults/
+.vs/
+Debug/
+ipch/
+**/bin/
+**/obj/
