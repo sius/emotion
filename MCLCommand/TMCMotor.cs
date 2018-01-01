@@ -18,8 +18,7 @@ namespace TMCLDirect
 
         internal SerialPort _port;
         protected CancellationTokenSource _tokenSource;
-        protected TimeSpan _pollingInterval;
-        //protected Timer _timer;
+
         #endregion
 
         #region Ctor
@@ -31,52 +30,7 @@ namespace TMCLDirect
         {
             _port = port;
             Number = number;
-            _pollingInterval = TimeSpan.FromMilliseconds(pollingIntervalMs);
-            //TimerCallback pollingCallback = _timer_PollMotorStatus;
-            //_timer = new Timer(pollingCallback, null, TimeSpan.Zero, _pollingInterval);
         }
-
-        //public TimeSpan PollingInterval
-        //{
-        //    get { return _pollingInterval; }
-        //    private set
-        //    {
-        //        if (!value.Equals(TimeSpan.Zero) && !value.Equals(_pollingInterval))
-        //        {
-        //            _pollingInterval = value;
-        //            _timer.Change(TimeSpan.Zero, value);
-        //        }
-        //    }
-        //}
-        //private void _timer_PollMotorStatus(object status)
-        //{
-        //    if (_tokenSource != null)
-        //    {
-        //        _tokenSource.Token.Register(() =>
-        //        {
-        //            if (MotorStopped != null && TargetPositionReached)
-        //            {
-        //                Console.WriteLine(TargetPosition);
-        //                MotorStopped(this, new EventArgs());
-        //            }
-        //        });
-        //    }
-        //    else
-        //    {
-        //        if (MotorStopped != null && TargetPositionReached)
-        //        {
-        //            Console.WriteLine(TargetPosition);
-        //            MotorStopped(this, new EventArgs());
-        //        }
-        //    }
-        //}
-        //private void _port_DataReceived(object sender, SerialDataReceivedEventArgs e)
-        //{
-        //    if (_port.BytesToRead == 9)
-        //    {
-        //        Console.WriteLine(_port.GetReply());
-        //    }
-        //}
 
         internal bool HasReply()
         {
